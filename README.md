@@ -1,2 +1,2 @@
 # Matlab Tasks
-![Instructions](data/Tasks.pdf)
+![Instructions](data/tasks.pdf)
