@@ -1,7 +1,7 @@
-% warning('off', 'all')
+warning('off', 'all')
 
 %Read data from dat file
-table = load('/home/kiprotich/Downloads/Documents/Tasks/ZTD_mayg.dat');
+table = load('data/ZTD_mayg.dat');
 %getting the values for column 2
 days = unique(table(:, 2));
 % Initialize a cell array to store mean values for columns
@@ -9,7 +9,7 @@ meanforcolumns = cell(length(days), 1);
 %adding a constant value for first column for year values
 year = 2022;
 %opens a file ZTD_daily_mayg.dat to write to
-file = fopen('/home/kiprotich/Downloads/Documents/Tasks/ZTD_daily_mayg.dat', 'w');
+file = fopen('data/ZTD_daily_mayg.dat', 'w');
 %checks if the file is open
 if file == -1
     error('Error opening file for writing');

@@ -1,8 +1,8 @@
 warning('off', 'all')
 
 %Read data from external files ZTD_daily_mayg.dat and mayg_2022avg.txt
-table = load('/home/kiprotich/Downloads/Documents/Tasks/ZTD_daily_mayg.dat');
-data = load('/home/kiprotich/Downloads/Documents/Tasks/mayg_2022avg.txt');
+table = load('data/ZTD_daily_mayg.dat');
+data = load('data/mayg_2022avg.txt');
 
 %symbolic variables used in calculation
 syms k_3 k_2 R_v T_s T_m
@@ -16,7 +16,7 @@ Tm = 0;
 PWV = 0;
 
 %Open a PWV_daily_mayg.dat to write to
-file = fopen('/home/kiprotich/Downloads/Documents/Tasks/PWV_daily_mayg.dat', 'w');
+file = fopen('data/PWV_daily_mayg.dat', 'w');
 %checks if the file is open
 if file == -1
     error('Error opening file for writing');
